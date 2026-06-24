@@ -25,3 +25,7 @@ O projeto segue uma arquitetura orientada a eventos (Event-Driven Architecture):
    npm install
    npm install --os=linux --cpu=x64 sharp
    ```
+2. Compacte o arquivo index.mjs, a pasta node_modules e o package.json em um arquivo projeto.zip.
+3. Faça o upload do ZIP na aba Código da sua função Lambda no Console AWS.
+4. Certifique-se de que a Role do Lambda possui a política de permissão AmazonS3FullAccess anexada.
+5. Configure o Gatilho (Trigger) do S3 no Lambda apontando para o seu Bucket com o prefixo entradas/.
